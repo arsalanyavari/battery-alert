@@ -15,7 +15,7 @@ then
 	then
 		if [[ $percentage < 20 && $percentage > 10 ]]
 		then
-			notify-send "داداش باطریم داره ته میکشه لطف کن ب همتی کن بزنم به شارژ؛ ذمت گرم جبران میکنم :)" -u low -t 20000 -i ~/.battery-allert/Pictures/icon/low.png
+			notify-send "داداش باطریم داره ته میکشه لطف کن ی همتی کن بزنم به شارژ؛ ذمت گرم جبران میکنم :)" -u low -t 20000 -i ~/.battery-allert/Pictures/icon/low.png
 		elif [[ $percentage < 11 && $percentage > 5 ]]
 		then
 			notify-send "ناموصا شارژ ندارم؛ ن اینکه نخواما، بخوامم نمیتونم بیشتر از این دووم بیارم" -u critical -t 20000 -i ~/.battery-allert/Pictures/icon/empty.png
