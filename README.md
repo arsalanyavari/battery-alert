@@ -12,9 +12,9 @@ The icons I chose include the following images:
 <img src="https://github.com/arsalanyavari/battery-alert/blob/main/.i/empty-c.png" width="100" height="100"/>
 
 In my system it is like this:<br />
-<img src="https://github.com/arsalanyavari/battery-alert/blob/main/.i/death.png" width="300" height="300"/>
-<img src="https://github.com/arsalanyavari/battery-alert/blob/main/.i/low.png" width="300" height="300"/>
-<img src="https://github.com/arsalanyavari/battery-alert/blob/main/.i/empty.png" width="300" height="300"/>
+<img src="https://github.com/arsalanyavari/battery-alert/blob/main/.i/death.png" width="200" height="200"/>
+<img src="https://github.com/arsalanyavari/battery-alert/blob/main/.i/low.png" width="200" height="200"/>
+<img src="https://github.com/arsalanyavari/battery-alert/blob/main/.i/empty.png" width="200" height="200"/>
 
 For the script to work properly, your system needs to be able to execute the hibernate command...
 ِYour system will be hibernate if has less than 5% battery
