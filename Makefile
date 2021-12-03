@@ -80,15 +80,20 @@ endif
 setup: cp_icon setup-sh cron
 
 cp_icon:
-	@mkdir -p ~/.battery-allert/Pictures/
-	@cp -r ./icon ~/.battery-allert/Pictures/
+	@mkdir -p ~/.battery-alert/Pictures/
+	@cp -r ./icon ~/.battery-alert/Pictures/
 
 setup-sh:
-	@cp ./check_battery.sh ~/.battery-allert
-	@sudo chmod +x ~/.battery-allert/check_battery.sh
+	@cp ./check_battery.sh ~/.battery-alert
+	@sudo chmod +x ~/.battery-alert/check_battery.sh
 
 cron:
-	@#sudo echo "*/2 * * * * $$USER ~/.battery-allert/check_battery.sh" >> /etc/crontab		I have no idea why it doesnt work :$
+	@#sudo echo "*/2 * * * * $$USER ~/.battery-alert/check_battery.sh" >> /etc/crontab		I have no idea why it doesnt work :$
 	@sudo bash cron.sh $$(whoami)
-	@echo "Be a nice person =)"
+	@echo "\e[1;34Be a nice person =)\e[0m"
 
+clean:
+	@sudo rm -rf ~/.battery-alert
+	@sudo sed -i '/check\_battery.sh/d' /etc/crontab
+	@echo "\e[1;32mAll cleaned =)\e[0m"
+	
