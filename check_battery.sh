@@ -13,7 +13,7 @@ if [[ $present == "yes" ]]
 then
 	if [[ $state == "discharging" ]]
 	then
-		if [[ $percentage < 20 && $percentage > 10 ]]
+		if [[ $percentage < 20 && $percentage > 10 && $percentage != "100%" ]]
 		then
 			notify-send "داداش باطریم داره ته میکشه لطف کن ی همتی کن بزنم به شارژ؛ ذمت گرم جبران میکنم :)" -u low -t 20000 -i ~/.battery-allert/Pictures/icon/low.png
 		elif [[ $percentage < 11 && $percentage > 5 ]]
